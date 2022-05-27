@@ -1,8 +1,8 @@
-package com.msb.com.msb.service;
+package com.msb.service;
 
 
 
-import com.msb.com.msb.pojo.Emp;
+import com.msb.pojo.Emp;
 
 import java.util.List;
 

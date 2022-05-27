@@ -1,8 +1,8 @@
-package com.msb.com.msb.controller;
+package com.msb.controller;
 
 
-import com.msb.com.msb.pojo.Emp;
-import com.msb.com.msb.service.EmpService;
+import com.msb.pojo.Emp;
+import com.msb.service.EmpService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

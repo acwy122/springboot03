@@ -1,12 +1,14 @@
-package com.msb.com.msb.mapper;
+package com.msb.mapper;
 
 
-import com.msb.com.msb.pojo.Emp;
+import com.msb.pojo.Emp;
 import org.apache.ibatis.annotations.Mapper;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
 
+@Repository
 @Mapper
 public interface EmpMapper {
 

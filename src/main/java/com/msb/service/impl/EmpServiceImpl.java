@@ -1,9 +1,10 @@
-package com.msb.com.msb.service.impl;
+package com.msb.service.impl;
 
 
-import com.msb.com.msb.mapper.EmpMapper;
-import com.msb.com.msb.pojo.Emp;
-import com.msb.com.msb.service.EmpService;
+
+import com.msb.mapper.EmpMapper;
+import com.msb.pojo.Emp;
+import com.msb.service.EmpService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

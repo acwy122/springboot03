@@ -1,4 +1,4 @@
-package com.msb.com.msb.pojo;
+package com.msb.pojo;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
