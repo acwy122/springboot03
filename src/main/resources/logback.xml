@@ -4,7 +4,7 @@
     <property name="LOG_HOME" value="${catalina.base}/logs/" />
     <!-- 控制台输出 -->
     <appender name="Stdout" class="ch.qos.logback.core.ConsoleAppender">
-        <!-- 日志输出编码 -->
+        <!-- 日志输出格式 -->
         <layout class="ch.qos.logback.classic.PatternLayout">
             <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符-->
             <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n
@@ -28,19 +28,15 @@
             <MaxFileSize>10MB</MaxFileSize>
         </triggeringPolicy>
     </appender>
-
-    <!-- 日志输出级别 -->
+    <!-- 日志输出级别和日志的输出方式 -->
     <root level="info">
         <appender-ref ref="Stdout" />
-        <appender-ref ref="RollingFile" />
+        <!-- <appender-ref ref="RollingFile" />-->
     </root>
 
     <logger name="com.msb.mapper" level="DEBUG"></logger>
-
-
-
     <!--日志异步到数据库 -->
-    <!--     <appender name="DB" class="ch.qos.logback.classic.db.DBAppender">
+    <!--<appender name="DB" class="ch.qos.logback.classic.db.DBAppender">
             日志异步到数据库
             <connectionSource class="ch.qos.logback.core.db.DriverManagerConnectionSource">
                连接池
@@ -52,5 +48,4 @@
                 </dataSource>
             </connectionSource>
       </appender> -->
-
 </configuration>
