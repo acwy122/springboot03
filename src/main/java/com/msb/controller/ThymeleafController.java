@@ -26,7 +26,7 @@ public class ThymeleafController {
         // 向application域放数据
         request.getServletContext().setAttribute("msg", "applicationMessage");
 
-        int i =1/0;
+        //int i =1/0;
 
         System.out.println("aaa");
         List<Emp> empList = empService.findAll();
